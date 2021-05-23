@@ -50,7 +50,7 @@ const Details = () => {
     };
 
     const cartAddBtn = () => {
-        fetch('http://localhost:5500/productAddToCart', {
+        fetch('https://lit-cliffs-57240.herokuapp.com/productAddToCart', {
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify(cartDetails)

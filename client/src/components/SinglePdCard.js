@@ -28,7 +28,7 @@ const SinglePdCard = ({ product }) => {
  
 
     const productDetails = (id) => {
-        fetch(`http://localhost:5500/loadSinglePd/${id}`)
+        fetch(`https://lit-cliffs-57240.herokuapp.com/loadSinglePd/${id}`)
         .then(res => res.json())
         .then(item => {
             setPd(item[0]);

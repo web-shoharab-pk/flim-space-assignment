@@ -45,7 +45,7 @@ const Cart = () => {
     const [products, setProducts] = useState([])
     console.log(products);
     useEffect(() => {
-        fetch('http://localhost:5500/cartProduct')
+        fetch('https://lit-cliffs-57240.herokuapp.com/cartProduct')
             .then(res => res.json())
             .then(products => setProducts(products))
     }, [])

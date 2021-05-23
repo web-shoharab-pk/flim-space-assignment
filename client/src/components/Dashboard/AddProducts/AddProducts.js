@@ -16,7 +16,7 @@ const AddProducts = () => {
 
     const addProductBtn = (e) => {
 
-        fetch('http://localhost:5500/addProduct', {
+        fetch('https://lit-cliffs-57240.herokuapp.com/addProduct', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(info)
